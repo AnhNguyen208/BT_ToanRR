@@ -1,0 +1,40 @@
+digraph {
+    rankdir=LR;
+    A [fillcolor=cyan, style=filled];
+    B [fillcolor=cyan, style=filled];
+    D [fillcolor=cyan, style=filled];
+    C [fillcolor=red, style=filled];
+    E [fillcolor=red, style=filled];
+    F [fillcolor=red, style=filled];
+    G [fillcolor=red, style=filled];
+    I [fillcolor=red, style=filled];
+    H [fillcolor=green, style=filled];
+    subgraph cluster_0 {
+        label="Subgraph A";
+        A; B; D
+    }
+
+    subgraph cluster_1 {
+        label="Subgraph B";
+        C; E; F; G; I
+    }
+    
+    subgraph cluster_2 {
+        label="Subgraph C";
+        H
+    }
+    
+    A -> B;
+    B -> D;
+    C -> E;
+    C -> F;
+    D -> A;
+    E -> F;
+    F -> G;
+    G -> E;
+    F -> I;
+    I -> C;
+   
+    
+}
+         

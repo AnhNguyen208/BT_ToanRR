@@ -1,0 +1,14 @@
+graph {
+rankdir=LR;
+1 [fillcolor=cyan, style=filled];
+2 [fillcolor=red, style=filled];
+3 [fillcolor=cyan, style=filled];
+4 [fillcolor=red, style=filled];
+5 [fillcolor=cyan, style=filled];
+6 [fillcolor=red, style=filled];
+1 -- 2;
+2 -- 3;
+3 -- 4;
+4 -- 5;
+5 -- 6;
+}

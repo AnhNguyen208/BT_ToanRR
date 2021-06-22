@@ -1,0 +1,39 @@
+digraph G {
+    rankdir=LR;
+    A -> B;
+    A -> C;
+    A -> E;
+    B -> D;
+    C -> E;
+    C -> F;
+    D -> A;
+    D -> C;
+    D -> H;
+    D -> I;
+    E -> F;
+    F -> G;
+    F -> I;
+    G -> E;
+    I -> C;
+    I -> H;
+}
+
+digraph G {
+    rankdir=LR;
+    B -> A;
+    C -> A;
+    E -> A;
+    D -> B;
+    E -> C;
+    F -> C;
+    A -> D;
+    C -> D;
+    H -> D;
+    I -> D;
+    F -> E;
+    G -> F;
+    I -> F;
+    E -> G;
+    C -> I;
+    H -> I;
+}
