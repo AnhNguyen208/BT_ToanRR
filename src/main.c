@@ -65,11 +65,13 @@ int main(){
         }
         else if (menu == 4)
         {
+            printf("Hình ảnh đồ thị tại file 'test3.gv.pdf'\n");
             Print_BFS("data.txt");
             getchar();
         }
         else if (menu == 5)
         {
+            printf("Hình ảnh đồ thị tại file 'test2.gv.pdf'\n");
             dijkstra("data1.txt", "map.txt");
             getchar();
         }
