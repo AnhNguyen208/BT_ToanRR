@@ -5,6 +5,7 @@
 #include "NenCay.h"
 #include "Tomau.h"
 #include "DFS.h"
+#include "BFS.h"
 
 int main(){
     int menu;
@@ -17,7 +18,8 @@ int main(){
         printf("1. Nén cây\n");
         printf("2. Tô màu đồ thị\n");
         printf("3. Duyệt đồ thi có hướng theo chiều sâu(DFS)\nvà tìm các thành phần liên thông mạnh của đồ thị\n");
-        printf("4. Duyệt đồ thị vô hướng theo chiều rộng(BFS)\nvà tìm đường đi ngắn nhất(Dijkstra)\n");
+        printf("4. Duyệt đồ thị vô hướng theo chiều rộng(BFS)\n");
+        printf("5. Tìm đường đi ngắn nhất(Dijkstra)\n");
         printf("0. Thoát chương trình\n");
         red();
         printf("Nhâp chức năng muốn thực hiện: \n");
@@ -63,10 +65,12 @@ int main(){
         }
         else if (menu == 4)
         {
+            Print_BFS("data.txt");
             getchar();
         }
         else if (menu == 5)
         {
+            dijkstra("data1.txt", "map.txt");
             getchar();
         }
         else if (menu == 0)
